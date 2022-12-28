@@ -21,7 +21,8 @@ body {
   margin: 2rem 1rem;
   background-color: var(--VerydarkblueMBG);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nftcard {
@@ -43,6 +44,7 @@ body {
 
 
 .nft__img img {
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -120,4 +122,25 @@ background-color: var(--Verydarkblue);
   height: 40px;
   border: 1px solid var(--White);
   border-radius: 50%;
+}
+
+.gitcode{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: scale 0.5s;
+}
+.gitcode:hover{
+  scale: 1.2;
+}
+a{
+  text-decoration: none;
+  color: var(--White);
+}
+
+.gitcode img{
+background-color: var(--White);
+border-radius: 50%;
 }
